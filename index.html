@@ -15,7 +15,7 @@
   <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">-->
   <link rel="stylesheet" href="icons-1.7.2/font/bootstrap-icons.css">
 
-  <title>Bonjour le monde!</title>
+  <title>Bienvenue dans votre espace personnel!</title>
 </head>
 
 <body>
@@ -24,37 +24,39 @@
     crossorigin="anonymous"></script>-->
   <script src="bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
 
-  <main>
-    <div class="container-xl">
 
-      <!-- Barre de navigation -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Cadeaux de rêve</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Accueil</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Cadeaux futurs</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Cadeaux passés</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Personnaliser</a>
-              </li>
-            </ul>
-          </div>
+
+  <!-- Barre de navigation -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-xl">
+        <a class="navbar-brand" href="#">Cadeaux de prestige</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cadeaux futurs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cadeaux passés</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Personnaliser</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-
-      <div class="container-fluid border-bottom border-5">
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="container-fluid">
+      <div class="container border-bottom border-5">
         <br />
 
         <!-- Titre de la page d'accueil -->
@@ -66,17 +68,18 @@
         </h4>
         <br />
       </div>
-      <div class="container-fluid border-bottom border-5">
+      <div class="container border-bottom border-5">
         <br />
 
         <div class="container">
-          <div class="row">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             <div class="col-sm">
-              <div class="card" style="width: 25rem;">
-                <img class="card-img-top" src="img/tesla.png" alt="Weekend en Tesla">
+              <div class="card shadow-sm">
+                <img class="card-img-top img-fluid" width="100%" height="auto" src="img/tesla.png"
+                  alt="Weekend en Tesla">
                 <div class="card-body">
                   <h5 class="card-title">Un Weekend en Tesla</h5>
-                  <p class="card-text">Si votre intention était de vous procurer une Tesla... 
+                  <p class="card-text">Si votre intention était de vous procurer une Tesla...
                     Eh bien! Prenez un long weekend de 3 jours pour décider si elle vous convient.</p>
                   <p class="card-text">Télécharger l'application Circuit Électrique et faites
                     la découverte de nouveaux horizons.
@@ -87,24 +90,26 @@
               </div>
             </div>
             <div class="col-sm">
-              <div class="card" style="width: 25rem;">
-                <img class="card-img-top" src="img/manoir.png" alt="Manoir Richelieu">
+              <div class="card shadow-sm">
+                <img class="card-img-top img-fluid" width="100%" height="auto" src="img/manoir.png"
+                  alt="Manoir Richelieu">
                 <div class="card-body">
                   <h5 class="card-title">Une détente au Manoir</h5>
-                  <p class="card-text">Éloignez-vous de la vie citadine, et venez vivre l'expérience détente à 
+                  <p class="card-text">Éloignez-vous de la vie citadine, et venez vivre l'expérience détente à
                     l'endroit de prédilection dans Charlevoix, au Manoir Richelieu!
                   </p>
-                    <p class="card-text">Faites une visite au spa ou une ronde de golf avec une vue superbe sur le 
-                      fleuve. Gâtez-vous!
-                    </p>
-                    <br /> 
+                  <p class="card-text">Faites une visite au spa ou une ronde de golf avec une vue superbe sur le
+                    fleuve. Gâtez-vous!
+                  </p>
+                  <br />
                   <a href="#" class="btn btn-primary">Sélectionner</a>
                 </div>
               </div>
             </div>
             <div class="col-sm">
-              <div class="card" style="width: 25rem;">
-                <img class="card-img-top" src="img/niagara.png" alt="Chutes Niagara">
+              <div class="card shadow-sm">
+                <img class="card-img-top img-fluid" width="100%" height="auto" src="img/niagara.png"
+                  alt="Chutes Niagara">
                 <div class="card-body">
                   <h5 class="card-title">Une force de la nature</h5>
                   <p class="card-text">Les chutes Niagara sont un incontournable si vous désirez vous évader
@@ -123,8 +128,9 @@
       </div>
 
     </div>
-</main>
-
+  </main>
+  <footer class="text-center fw-light">&copy; 2022 - Patrick Chiasson</footer>
+  </div>
   <script src="index.js"></script>
 
 </body>
