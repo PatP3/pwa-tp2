@@ -1,18 +1,18 @@
 var cacheName = 'cache-tp2-v1';
 var filesToCache = [
-    '/pwa-tp2/',
-    '/pwa-tp2/index.html',
-    '/pwa-tp2/index.js',
-    '/pwa-tp2/bootstarp-5.1.3-dist/',
-    '/pwa-tp2/bootstarp-5.1.3-dist/css/',
-    '/pwa-tp2/bootstrap-5.1.3-dist/css/bootstrap.min.css',
-    '/pwa-tp2/bootstarp-5.1.3-dist/js/',
-    '/pwa-tp2/bootstrap-5.1.3-dist/js/bootstrap.min.js',
-    '/pwa-tp2/img/',
-    '/pwa-tp2/img/manoir.png',
-    '/pwa-tp2/img/niagara.png',
-    '/pwa-tp2/img/tesla.png',
-    '/pwa-tp2/favicon.ico'
+    '/',
+    '/index.html',
+    '/index.js',
+    '/bootstarp-5.1.3-dist/',
+    '/bootstarp-5.1.3-dist/css/',
+    '/bootstrap-5.1.3-dist/css/bootstrap.min.css',
+    '/bootstarp-5.1.3-dist/js/',
+    '/bootstrap-5.1.3-dist/js/bootstrap.min.js',
+    '/img/',
+    '/img/manoir.png',
+    '/img/niagara.png',
+    '/img/tesla.png',
+    '/favicon.ico'
 ]
 
 self.addEventListener('install', (e) => {
