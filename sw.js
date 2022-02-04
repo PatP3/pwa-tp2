@@ -1,4 +1,4 @@
-var cacheName = 'cache-tp2-v1';
+var cacheName = 'pwa-tp2-v1';
 var filesToCache = [
     '/',
     '/index.html',
@@ -13,13 +13,14 @@ var filesToCache = [
     '/img/niagara.png',
     '/img/tesla.png',
     '/favicon.ico'
-]
+];
 
 self.addEventListener('install', (e) => {
     console.log('[Service Worker] Installation');
 
     e.waitUntil(
-        caches.open(cacheName).then(function(cache) {
+        caches.open(cacheName).then((cache) => {
+            console.log('[Service Worker] Mise en cache.');
             return cache.addAll(filesToCache);
         }).then(function() {
             return self.skipWaiting();
@@ -48,6 +49,6 @@ self.addEventListener('fetch', function(e) {
     );
 });
 
-// onmessage = function(e) {
-//     console.log('[Service Worker] On Message: ', e);
-// }
+onmessage = function(e) {
+    console.log('[Service Worker] On Message: ', e);
+}
