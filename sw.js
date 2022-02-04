@@ -22,8 +22,6 @@ self.addEventListener('install', (e) => {
         caches.open(cacheName).then((cache) => {
             console.log('[Service Worker] Mise en cache.');
             return cache.addAll(filesToCache);
-        }).then(function() {
-            return self.skipWaiting();
         })
     );
 });
