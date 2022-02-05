@@ -30,6 +30,6 @@ function showInstallPromotion() {
     toast.show();
 }
 
-function sendMessageToServiceWorker() {
-    navigator.serviceWorker.controller.postMessage("Hello World");
-}
+// function sendMessageToServiceWorker() {
+//     navigator.serviceWorker.controller.postMessage("Hello World");
+// }
