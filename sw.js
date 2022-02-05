@@ -12,6 +12,10 @@ var filesToCache = [
     '/img/manoir.png',
     '/img/niagara.png',
     '/img/tesla.png',
+    '/img/icon-192x192.png',
+    '/img/icon-256x256.png',
+    '/img/icon-384x384.png',
+    '/img/icon-512x512.png',
     '/favicon.ico'
 ];
 
@@ -47,6 +51,6 @@ self.addEventListener('fetch', function(e) {
     );
 });
 
-onmessage = function(e) {
-    console.log('[Service Worker] On Message: ', e);
-}
+// onmessage = function(e) {
+//     console.log('[Service Worker] On Message: ', e);
+// }
