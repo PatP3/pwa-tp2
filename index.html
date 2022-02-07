@@ -10,7 +10,7 @@
   <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">-->
   <link href="bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
-
+  
   <!-- Bootstrap Icons CSS -->
   <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">-->
   <link rel="stylesheet" href="icons-1.7.2/font/bootstrap-icons.css">
@@ -68,6 +68,22 @@
     <div class="container-fluid">
       <div class="container border-bottom border-5 mb-4">
 
+        <!-- Live Toast pour inviter le client à installer l'application -->
+        <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+          <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <img src="..." class="rounded me-2" alt="...">
+              <strong class="me-auto">Bootstrap</strong>
+              <small>11 mins ago</small>
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+              Bonjour ça fonctionne!
+              <button id="installAppButton"></button>
+            </div>
+          </div>
+        </div>
+
         <!-- Titre de la page d'accueil -->
         <h3 class="text-center text-dark fw-bold mt-4">
           Échanger vos points pour une toute nouvelle récompense...
@@ -87,7 +103,7 @@
                   <h5 class="card-title">Un Weekend en Tesla</h5>
                   <p class="card-text">Si votre intention était de vous procurer une Tesla...
                     Eh bien! Prenez un long weekend de 3 jours pour décider si elle vous convient.
-                    <br /></br>
+                    <br /><br />
                     Téléchargez l'application Circuit Électrique et faites
                     la découverte de nouveaux horizons.
                   </p>
@@ -104,7 +120,7 @@
                   <h5 class="card-title">Une détente au Manoir</h5>
                   <p class="card-text">Éloignez-vous de la vie citadine, et venez vivre l'expérience détente à
                     l'endroit de prédilection dans Charlevoix, au Manoir Richelieu!
-                    <br /></br>
+                    <br /><br />
                     Faites une visite au spa ou une ronde de golf avec une vue superbe sur le
                     fleuve. Gâtez-vous!
                   </p>
@@ -128,24 +144,6 @@
                 </div>
               </div>
             </div>
-            <script>
-              $(document).ready(function() {
-                  $(".toast").toast('show');
-              });
-            </script>
-            <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
-              <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-                <div class="toast-header">
-                  <img src="..." class="rounded me-2" alt="...">
-                  <strong class="me-auto">Bootstrap</strong>
-                  <small>11 mins ago</small>
-                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                </div>
-                <div class="toast-body">
-                  Hello, world! This is a toast message.
-                </div>
-              </div>
-            </div>
           </div>
         </div>
         <br />
@@ -157,7 +155,6 @@
       &copy; 2022 - Patrick Chiasson
     </p>
   </footer>
-  </div>
   <script src="index.js"></script>
 </body>
 

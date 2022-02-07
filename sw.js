@@ -43,13 +43,13 @@ self.addEventListener('fetch', function(e) {
     );
 });
 
-self.addEventListener('fetch', function(e) {
-    e.respondWith(
-        fetch(e.request).catch(function() {
-            return caches.match(e.request);
-        })
-    );
-});
+// self.addEventListener('fetch', function(e) {
+//     e.respondWith(
+//         fetch(e.request).catch(function() {
+//             return caches.match(e.request);
+//         })
+//     );
+// });
 
 // onmessage = function(e) {
 //     console.log('[Service Worker] On Message: ', e);

@@ -21,12 +21,12 @@ window.addEventListener('beforeinstallprompt', (e) => {
     const installAppButton = document.getElementById('installAppButton')
     installAppButton.addEventListener('click', function() {
         deferredPrompt.prompt();
-    })
+    });
 });
 
 function showInstallPromotion() {
-    const toastLiveExample = document.getElementById('liveToast')
-    const toast = new bootstrap.Toast(toastLiveExample, {delay: 30000})
+    const toastLiveExample = document.getElementById('liveToast');
+    const toast = new bootstrap.Toast(toastLiveExample, {delay: 30000});
     toast.show();
 }
 
