@@ -72,14 +72,12 @@
         <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
           <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="toast-header">
-              <img src="..." class="rounded me-2" alt="...">
-              <strong class="me-auto">Bootstrap</strong>
-              <small>11 mins ago</small>
+              <strong class="me-auto">Garder votre compte à portée de main</strong>
               <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
             </div>
             <div class="toast-body">
-              Bonjour ça fonctionne!
-              <button id="installAppButton"></button>
+              <button class="btn btn-primary" id="installAppButton">Installer comme application</button>
+              <button class="btn btn-secondary" onclick="self.close()">Plus tard</button>
             </div>
           </div>
         </div>
