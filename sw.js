@@ -19,7 +19,7 @@ var filesToCache = [
     '/img/icon-512x512.png',
     '/favicon.ico'
 ];
-console.log('il est entre dans sw.js');
+
 self.addEventListener('install', (e) => {
     console.log('[Service Worker] Installation');
 
