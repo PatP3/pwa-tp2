@@ -1,4 +1,3 @@
-console.log('il est dans le sw');
 var cacheName = 'pwa-tp2-v1';
 var filesToCache = [
     '/pwa-tp2/',
