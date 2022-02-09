@@ -1,23 +1,23 @@
 var cacheName = 'pwa-tp2-v1';
 var filesToCache = [
-    '/',
-    '/index.html',
-    '/index.js',
-    '/bootstrap-5.1.3-dist/',
-    '/bootstrap-5.1.3-dist/css/',
-    '/bootstrap-5.1.3-dist/css/bootstrap.min.css',
-    '/bootstrap-5.1.3-dist/js/',
-    '/bootstrap-5.1.3-dist/js/bootstrap.min.js',
-    '/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js',
-    '/img/',
-    '/img/manoir.png',
-    '/img/niagara.png',
-    '/img/tesla.png',
-    '/img/icon-192x192.png',
-    '/img/icon-256x256.png',
-    '/img/icon-384x384.png',
-    '/img/icon-512x512.png',
-    '/favicon.ico'
+    '.',
+    'index.html',
+    'index.js',
+    'bootstrap-5.1.3-dist/',
+    'bootstrap-5.1.3-dist/css/',
+    'bootstrap-5.1.3-dist/css/bootstrap.min.css',
+    'bootstrap-5.1.3-dist/js/',
+    'bootstrap-5.1.3-dist/js/bootstrap.min.js',
+    'bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js',
+    'img/',
+    'img/manoir.png',
+    'img/niagara.png',
+    'img/tesla.png',
+    'img/icon-192x192.png',
+    'img/icon-256x256.png',
+    'img/icon-384x384.png',
+    'img/icon-512x512.png',
+    'favicon.ico'
 ];
 
 self.addEventListener('install', (e) => {
