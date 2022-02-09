@@ -2,7 +2,7 @@
     "theme_color": "#1056e5",
     "background_color": "#ffffff",
     "display": "standalone",
-    "scope": "/pwa-tp2/.",
+    "scope": "/pwa-tp2/",
     "start_url": "/pwa-tp2/index.html",
     "name": "Cadeaux de prestige",
     "short_name": "Cadeaux",
