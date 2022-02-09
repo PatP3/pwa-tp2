@@ -1,5 +1,5 @@
 if('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/pwa-tp2/sw.js').then(function(reg) {
+    navigator.serviceWorker.register('https://patp3.github.io/pwa-tp2/').then(function(reg) {
         // Enregistrement fonctionne
         console.log('Enregistrement du Service Worker');
     }).catch(function(error) {
