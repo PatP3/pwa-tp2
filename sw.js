@@ -1,6 +1,6 @@
 var cacheName = 'pwa-tp2-v1';
 var filesToCache = [
-    '/pwa-tp2/',
+    '/pwa-tp2/.',
     '/pwa-tp2/index.html',
     '/pwa-tp2/index.js',
     '/pwa-tp2/bootstrap-5.1.3-dist/',
