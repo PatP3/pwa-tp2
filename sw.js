@@ -51,7 +51,3 @@ self.addEventListener('fetch', function(e) {
         })
     );
 });
-
-// onmessage = function(e) {
-//     console.log('[Service Worker] On Message: ', e);
-// }
